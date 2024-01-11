@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AliExpress</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">AliExpress</div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="What are you looking for">
+        </div>
+
+        <div class="dropdown_nav">
+            <button class="dropbtn">English/PKR
+                <i class="fa fa-caret-down"></i>
+            </button>
+
+            <div class="dropdown_navcontent">
+                <form action="">
+                    <div class="field_wrapper">
+                        <label for="countries">Ship to</label>
+                        <select class="field" id="countries" name="countries">
+                            <option value="">Pakistan</option>
+                            <option value="">China</option>
+                            <option value="">USA</option>
+                        </select>
+                    </div>
+
+                    <div class="field_wrapper">
+                        <label for="language">Language</label>
+                        <select class="field" id="language" name="language">
+                            <option value="">English</option>
+                            <option value="">Urdu</option>
+                            <option value="">Hindi</option>
+                        </select>
+                    </div>
+
+                    <div class="field_wrapper">
+                        <label for="currency">Currency</label>
+                        <select class="field" id="currency" name="currency">
+                            <option value="">PKR</option>
+                            <option value="">USD</option>
+                            <option value="">INR</option>
+                        </select>
+                    </div>
+                    <div class="field_wrapper">
+                        <button>Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="dropdown_nav">
+            <button class="dropbtn">Services
+                <i class="fa fa-caret-down"></i>
+            </button>
+
+            <div class="dropdown_navcontent">
+                <h3>Welcome to AliExpress!</h3>
+                <div class="btns">
+                    <button id="loginButton">Login</button>
+                    <button id="signupButton">Sign Up</button>
+                </div>
+                <a href="task.html">My orders</a>
+                <a href="#service2">My Coins</a>
+                <a href="#service3">Message center</a>
+                <a href="#service3">Payment</a>
+                <a href="#service3">Wish list</a>
+                <a href="#service3">My coupons</a>
+                <a href="#service3">Seller Login</a>
+                <a href="buyer.html">Buyer Protection</a>
+                <a href="#service3">Help Center</a>
+                <a href="#service3">Disputes & Reports</a>
+                <a href="#service3">Report IPR infringement</a>
+                <a href="#service3">Accessibility</a>
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="subcart">
+                <span>0</span>
+                <a href="#home"><i class="fas fa-shopping-cart"></i>Cart</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar-1">
+
+        <div class="dropdown-1">
+            <button class="dropbtn-1">Categories <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content-1">
+                <a href="computer.php">Computer Accessories</a>
+                <a href="accessories.php">Accessories</a>
+                <a href="men.php">Men's Clothing</a>
+                <a href="women.php"> Women Clothing</a>
+                <a href="home.php"> Home Appliances</a>
+                
+            </div>
+        </div>
+        <a href="computer.html">Best sellers</a>
+        <a href="accessories.html">Top Brands</a>
+        <a href="home.html">Home & Garden</a>
+        <a href="men.html">Clothing</a>
+
+    </div>
+
+
+
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide"><img src="images/sale6.png" alt="Slide 1"></div>
+        <div class="slide"><img src="images/sale9.png" alt="Slide 2"></div>
+        <div class="slide"><img src="images/banners copy.png" alt="Slide 3"></div>
+        <!-- Add more slides as needed -->
+    </div>
+</div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-content">
+                <h2>Choice Day</h2>
+                <p>Home Deals</p>
+            </div>
+            <img src="images/ring.png" alt="ring">
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h2>Choice Day</h2>
+                <p>Home Deals</p>
+            </div>
+            <img src="images/infinix.png" alt="infinix">
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h2>Choice Day</h2>
+                <p>Home Deals</p>
+            </div>
+            <img src="images/ladies1.png" alt="ladies1">
+        </div>
+
+
+    </div>
+
+
+    <div class="bar-2">
+
+        <h1>Best Selling Products</h1>
+    </div>
+
+
+
+    <!-- superdeals -->
+    <div class="listing">
+        <div class="item">
+            <img src="images/jacket.png" alt="earpods">
+            <div class="stats">
+                <span class="price1">JACKET</span><br>
+                <span class="price">PKR 186</span><br>
+                <button class="btn" onclick="openModal('Jacket', 186, 'images/jacket.png')">Add to Cart</button>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+            <img src="images/boots.png" alt="earpods">
+        <div class="stats">
+            <span class="price1">BOOTS</span><br>
+            <span class="price">PKR 186</span><br>
+            <button class="btn" onclick="openModal('Boots', 186, 'images/boots.png')">Add to Cart</button>
+        
+        
+        </div>
+
+        </div>
+
+        <div class="item">
+            <img src="images/ring.png" alt="tecno">
+    <div class="stats">
+        <span class="price1">RING</span><br>
+        <span class="price">PKR 186</span><br>
+        <button class="btn" onclick="openModal('RING', 186, 'images/ring.png')">Add to Cart</button>
+
+    
+    
+    </div>
+
+        </div>
+
+        <div class="item">
+            <img src="images/bag.png" alt="mouse">
+    <div class="stats">
+        <span class="price1">BAG</span><br>
+        <span class="price">PKR 186</span><br>
+        <a href="cart.html">Add to cart</a>
+    
+    
+    </div>
+
+        </div>
+
+        <div class="item">
+            <img src="images/scarf.png" alt="watch2">
+    <div class="stats">
+        <span class="price1">SCARF</span><br>
+        <span class="price">PKR 186</span><br>
+        <a href="cart.html">Add to cart</a>
+    
+    
+    </div>
+
+        </div>
+        <div class="item">
+            <img src="images/earpods.png" alt="earpods">
+        <div class="stats">
+            <span class="price1">EARPODS</span><br>
+            <span class="price">PKR 186</span><br>
+            <a href="cart.html">Add to cart</a>
+        
+        
+        </div>
+
+        </div>
+
+        <div class="item">
+            <img src="images/tv1.png" alt="earpods">
+        <div class="stats">
+            <span class="price1">TV</span><br>
+            <span class="price">PKR 186</span><br>
+            <a href="cart.html">Add to cart</a>
+        
+        
+        </div>
+
+        </div>
+
+        <div class="item">
+            <img src="images/tecno.png" alt="tecno">
+            <div class="stats">
+                <span class="price1">TECNO</span><br>
+                <span class="price">PKR 186</span><br>
+                <a href="cart.html">Add to cart</a>
+            
+            
+            </div>
+
+        </div>
+
+        <div class="item">
+            <img src="images/mouse.png" alt="mouse">
+        <div class="stats">
+            <span class="price1">MOUSE</span><br>
+            <span class="price">PKR 186</span><br>
+            <a href="cart.html">Add to cart</a>
+        
+        
+        </div>
+
+        </div>
+
+        <div class="item">
+            <img src="images/watch2.png" alt="watch2">
+        <div class="stats">
+            <span class="price1">WATCH</span><br>
+            <span class="price">PKR 186</span><br>
+            <a href="cart.html">Add to cart</a>
+        
+        
+        </div>
+
+        </div>
+
+        <div class="item">
+            <img src="images/infinix.png" alt="infinix">
+            <div class="stats">
+                <span class="price1">INFINIX</span><br>
+                <span class="price">PKR 186</span><br>
+                <a href="cart.html">Add to cart</a>
+            
+            
+            </div>
+
+        </div>
+        <div class="item">
+            <img src="images/ladies2.png" alt="earpods">
+        <div class="stats">
+            <span class="price1">MAXI</span><br>
+            <span class="price">PKR 186</span><br>
+            <a href="cart.html">Add to cart</a>
+        
+        
+        </div>
+
+        </div>
+
+        <div class="item">
+            <img src="images/ring.png" alt="tecno">
+        <div class="stats">
+            <span class="price1">RING</span><br>
+            <span class="price">PKR 186</span><br>
+            <a href="cart.html">Add to cart</a>
+        
+        
+        </div>
+
+        </div>
+
+        <div class="item">
+            <img src="images/scarf.png" alt="watch2">
+            <div class="stats">
+                <span class="price1">SCARF</span><br>
+                <span class="price">PKR 186</span><br>
+                <a href="cart.html">Add to cart</a>
+            
+            
+            </div>
+
+        </div>
+
+        <div class="item">
+            <img src="images/shawl.png" alt="infinix">
+    <div class="stats">
+        <span class="price1">SHAWL</span><br>
+        <span class="price">PKR 186</span><br>
+        <a href="cart.html">Add to cart</a>
+    
+    
+    </div>
+        </div>
+    </div>
+   <!-- Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">×</span>
+        <div class="modal-body">
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="Product Image">
+            </div>
+            <div class="modal-text">
+                <h2 id="modalName"></h2>
+                <p id="modalPrice"></p>
+                <button onclick="location.href='cart.php'">ADD to Cart</button>
+                <button onclick="location.href='place-order.php'">Go to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="info">
+            <div class="singleone">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Great value</h3>
+                <p>
+                    We offer competitive prices on over 100 milion items.
+                </p>
+            </div>
+
+            <div class="singleone">
+                <i class="fas fa-bus"></i>
+                <h3>Worldwide shopping</h3>
+                <p>
+                    We offer competitive prices on over 100 milion items.
+                </p>
+            </div>
+
+            <div class="singleone">
+                <i class="fas fa-credit-card"></i>
+                <h3>Safe payment</h3>
+                <p>
+                    We offer competitive prices on over 100 milion items.
+                </p>
+            </div>
+
+            <div class="singleone">
+                <i class="fas fa-check-circle"></i>
+                <h3>Shop with confidence</h3>
+                <p>
+                    We offer competitive prices on over 100 milion items.
+                </p>
+            </div>
+
+            <div class="singleone">
+                <i class="fas fa-people-arrows"></i>
+                <h3>Help center</h3>
+                <p>
+                    We offer competitive prices on over 100 milion items.
+                </p>
+            </div>
+
+            <div class="singleone">
+                <i class="fab fa-android"></i>
+                <h3>Shop better</h3>
+                <p>
+                    We offer competitive prices on over 100 milion items.
+                </p>
+            </div>
+        </div>
+        <!-- socials -->
+        <div class="moreinfo">
+            <div class="socials">
+                <h3>Stay connected</h3>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fab fa-facebook-messenger"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+
+
+            <div class="footermenu">
+                <div>
+                    <h3>Shopping with us</h3>
+                    <ul>
+                        <li>Making payments</li>
+                        <li>Delivery options</li>
+                        <li>Buyer Protection</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Customer service</h3>
+                    <ul>
+                        <li>Help center</li>
+                        <li>Transaction services Agreement for non-EU/UK Consumers</li>
+                        <li>Terms and conditions for EU/UK/EEA</li>
+                        <li>Consumers (Transactions)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- footer -->
+</body>
+<script>
+// banner
+    let currentIndex = 0;
+    const intervalTime = 2000; // Change this value to set the interval time in milliseconds
+    let intervalId;
+
+    function showSlide(index) {
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+        if (index >= slides.length) {
+            currentIndex = 0;
+        } else if (index < 0) {
+            currentIndex = slides.length - 1;
+        } else {
+            currentIndex = index;
+        }
+        const translateValue = -currentIndex * 100 + '%';
+        slider.style.transform = 'translateX(' + translateValue + ')';
+    }
+
+    function nextSlide() {
+        showSlide(currentIndex + 1);
+        resetInterval();
+    }
+
+    function prevSlide() {
+        showSlide(currentIndex - 1);
+        resetInterval();
+    }
+
+    function startInterval() {
+        intervalId = setInterval(nextSlide, intervalTime);
+    }
+
+    function resetInterval() {
+        clearInterval(intervalId);
+        startInterval();
+    }
+
+    // Start the automatic slide change
+    startInterval();
+
+    // banner
+    // JavaScript to handle button click and redirect
+    document.getElementById('loginButton').addEventListener('click', function () {
+        // Redirect to the registration form page
+        window.location.href = 'form.php';
+    });
+
+    // JavaScript to handle button click and redirect
+    document.getElementById('signupButton').addEventListener('click', function () {
+        // Redirect to the signin form page
+        window.location.href = 'signupform.php';
+    });
+    
+    
+</script>
+</body>
+
+</html>
+<style>
+    /* The Modal (background) */
+/* The Modal (background) */
+.modal {
+    font-family: 'Times New Roman', Times, serif;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Adjust as needed */
+}
+
+.modal-body {
+    display: flex;
+    align-items: center;
+}
+
+.modal-image img {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.modal-text {
+    flex-grow: 1;
+}
+
+/* The Close Button */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn {
+    background-color: #f54242;
+    float: left;
+    display: block;
+    color: rgb(235, 232, 232);
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 3px;
+    border: 2px solid rgb(12, 12, 12);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+/* Additional styles for the modal */
+
+
+</style>
+<script>
+    // When the user clicks the button, open the modal 
+function openModal(name, price, imageUrl) {
+    document.getElementById('modalName').innerText = name;
+    document.getElementById('modalPrice').innerText = 'Price: PKR ' + price;
+    document.getElementById('modalImage').src = imageUrl;
+
+    var modal = document.getElementById('productModal');
+    modal.style.display = "block";
+
+    // Add event listener for Add to Cart button inside the modal
+    document.getElementById('addToDbButton').onclick = function() {
+        addToCart(name, price, imageUrl); // Function to handle adding product to the database
+    };
+}
+
+// When the user clicks on <span> (x), close the modal
+document.querySelector('.close-button').onclick = function() {
+    var modal = document.getElementById('productModal');
+    modal.style.display = "none";
+};
+
+// Close the modal if user clicks outside of it
+window.onclick = function(event) {
+    var modal = document.getElementById('productModal');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+
+function addToCart(name, price, imageUrl) {
+    // Function to add the product to the database
+    // Implement your logic here
+}
+
+</script>
